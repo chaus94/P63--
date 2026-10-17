@@ -1,0 +1,43 @@
+DOCTYPE: оголошення типу документа HTML
+
+DOCTYPE (Document Type Declaration) — це оголошення на самому початку HTML-документа. Воно не є звичайним HTML-тегом. Браузер використовує його, щоб визначити, як відображати сторінку.
+
+Сучасний HTML
+<!DOCTYPE html>
+
+У сучасному HTML використовується коротке оголошення <!DOCTYPE html>. Воно вмикає режим стандартного відображення, але не містить номера версії: HTML розвивається як Living Standard.
+
+Попередні версії та формати
+
+HTML 2.0
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+
+HTML 3.2
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+HTML 4.01 Strict — суворий варіант без застарілих елементів оформлення та фреймів.
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+HTML 4.01 Transitional — перехідний варіант, який допускає деякі застарілі елементи й атрибути.
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+HTML 4.01 Frameset — варіант для документів, у яких використовувалися фрейми.
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+
+XHTML 1.0 Strict — суворий варіант XHTML 1.0; документ також має відповідати синтаксису XML.
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+XHTML 1.0 Transitional — перехідний варіант XHTML 1.0.
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+XHTML 1.0 Frameset — варіант XHTML 1.0 для документів із фреймами.
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+XHTML 1.1 — модульна версія XHTML із синтаксисом XML.
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+Для нових сторінок використовують <!DOCTYPE html>. Інші оголошення наведені для ознайомлення та роботи зі старими документами.
+
+
+username. chaus94 github
+name. kirill

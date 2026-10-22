@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шістнадцяткова система та кольори RGB</title>
+    <style>
+        body {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 24px;
+            color: #222;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2 {
+            color: #174b78;
+        }
+
+        code {
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: #eef3f8;
+            font-family: Consolas, monospace;
+        }
+
+        .example {
+            padding: 14px;
+            border-left: 4px solid #3a86ff;
+            background: #f3f7fc;
+        }
+
+        .colors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .color {
+            width: 150px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .swatch {
+            height: 80px;
+        }
+
+        .color p {
+            margin: 0;
+            padding: 10px;
+        }
+
+        .color-picker {
+            margin-top: 24px;
+            padding: 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f8fafc;
+        }
+
+        .color-picker label {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .color-picker input {
+            width: 48px;
+            height: 40px;
+            padding: 2px;
+            cursor: pointer;
+        }
+
+        .color-preview {
+            height: 100px;
+            margin-top: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #3A86FF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Шістнадцяткова система числення та кольори RGB</h1>
+
+    <section>
+        <h2>Що таке шістнадцяткова система?</h2>
+        <p>
+            У десятковій системі числення є десять цифр: від 0 до 9. У
+            шістнадцятковій системі, або hex, використовують шістнадцять символів:
+            цифри від 0 до 9 та літери від A до F.
+        </p>
+        <p>
+            Літери позначають значення: <code>A = 10</code>, <code>B = 11</code>,
+            <code>C = 12</code>, <code>D = 13</code>, <code>E = 14</code>,
+            <code>F = 15</code>. Кожна позиція числа відповідає степеню 16.
+        </p>
+        <p class="example">
+            <strong>Приклад:</strong> <code>2F</code> = 2 × 16 + 15 = 47 у
+            десятковій системі.
+        </p>
+    </section>
+
+    <section>
+        <h2>Як записують колір у форматі RGB?</h2>
+        <p>
+            RGB — це спосіб утворення кольору змішуванням трьох компонентів світла:
+            червоного (R — red), зеленого (G — green) і синього (B — blue).
+            У CSS колір часто записують шістнадцятковим кодом виду
+            <code>#RRGGBB</code>.
+        </p>
+        <p>
+            Після символу <code>#</code> ідуть три пари цифр: перша задає кількість
+            червоного, друга — зеленого, третя — синього. Кожна пара має значення
+            від <code>00</code> до <code>FF</code>, тобто від 0 до 255.
+        </p>
+        <div class="colors">
+            <div class="color">
+                <div class="swatch" style="background-color: #FF0000;"></div>
+                <p><strong>#FF0000</strong><br>Червоний</p>
+            </div>
+            <div class="color">
+                <div class="swatch" style="background-color: #00FF00;"></div>
+                <p><strong>#00FF00</strong><br>Зелений</p>
+            </div>
+            <div class="color">
+                <div class="swatch" style="background-color: #0000FF;"></div>
+                <p><strong>#0000FF</strong><br>Синій</p>
+            </div>
+        </div>
+        <p>
+            Значення <code>00</code> означає, що компонент вимкнений, а
+            <code>FF</code> — його максимальну яскравість. Наприклад,
+            <code>#000000</code> — чорний, <code>#FFFFFF</code> — білий,
+            <code>#FFFF00</code> — жовтий.
+        </p>
+    </section>
+
+    <section>
+        <h2>Приклад розбору кольору</h2>
+        <p>Розглянемо код <code>#3A86FF</code>:</p>
+        <ul>
+            <li><code>3A</code> = 3 × 16 + 10 = 58 — червоний компонент;</li>
+            <li><code>86</code> = 8 × 16 + 6 = 134 — зелений компонент;</li>
+            <li><code>FF</code> = 15 × 16 + 15 = 255 — синій компонент.</li>
+        </ul>
+        <p>Отже, <code>#3A86FF</code> відповідає <code>RGB(58, 134, 255)</code>.</p>
+        <p>
+            Якщо в кожній парі символи однакові, можна скористатися скороченим
+            записом із трьох символів: <code>#FF8800</code> можна записати як
+            <code>#F80</code>.
+        </p>
+    </section>
+
+    <section class="color-picker" aria-labelledby="color-picker-title">
+        <h2 id="color-picker-title">Спробуйте самі: виберіть колір</h2>
+        <label for="color-input">
+            Колір для перегляду:
+            <input id="color-input" type="color" value="#3a86ff">
+        </label>
+        <div class="color-preview" id="color-preview" role="img" aria-label="Попередній перегляд кольору"></div>
+        <p>HEX: <code id="hex-value">#3A86FF</code></p>
+        <p>RGB: <code id="rgb-value">RGB(58, 134, 255)</code></p>
+    </section>
+
+    <script>
+        const colorInput = document.querySelector("#color-input");
+        const colorPreview = document.querySelector("#color-preview");
+        const hexValue = document.querySelector("#hex-value");
+        const rgbValue = document.querySelector("#rgb-value");
+
+        colorInput.addEventListener("input", () => {
+            const hex = colorInput.value.toUpperCase();
+            const red = Number.parseInt(hex.slice(1, 3), 16);
+            const green = Number.parseInt(hex.slice(3, 5), 16);
+            const blue = Number.parseInt(hex.slice(5, 7), 16);
+
+            colorPreview.style.backgroundColor = hex;
+            hexValue.textContent = hex;
+            rgbValue.textContent = `RGB(${red}, ${green}, ${blue})`;
+        });
+    </script>
+</body>
+</html>

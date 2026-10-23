@@ -1,0 +1,31 @@
+.middle{
+vertical-align: middle;
+}
+
+
+
+
+table{
+    color: red;
+}
+
+
+
+img {
+    width: 40px;
+
+}
+
+h1{
+   text-align:center;
+}
+
+.selector-table {
+    border: 1px solid rgb(114, 95, 95);
+     border-collapse: collapse;
+}
+.selector-table  th, .selector-table  td {
+    border: 1px solid rgb(114, 95, 95);
+    
+}
+

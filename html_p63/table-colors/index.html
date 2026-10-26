@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кольорова таблиця</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Кольорове оформлення таблиці</h1>
+        <p>
+            Для оформлення рядків використано CSS-селектори
+            <code>tbody tr:nth-child(odd)</code> і
+            <code>tbody tr:nth-child(even)</code>.
+        </p>
+
+        <table class="selector-table">
+            <caption>Приклади CSS-селекторів</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Селектор</th>
+                    <th scope="col">Що вибирає</th>
+                    <th scope="col">Приклад</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>*</code></td>
+                    <td>Усі елементи на сторінці</td>
+                    <td><code>* { box-sizing: border-box; }</code></td>
+                </tr>
+                <tr>
+                    <td><code>p</code></td>
+                    <td>Усі абзаци</td>
+                    <td><code>p { color: #334155; }</code></td>
+                </tr>
+                <tr>
+                    <td><code>.note</code></td>
+                    <td>Елементи з класом <code>note</code></td>
+                    <td><code>.note { background: #fff7cc; }</code></td>
+                </tr>
+                <tr>
+                    <td><code>#title</code></td>
+                    <td>Елемент з ідентифікатором <code>title</code></td>
+                    <td><code>#title { text-align: center; }</code></td>
+                </tr>
+                <tr>
+                    <td><code>table td</code></td>
+                    <td>Усі комірки даних усередині таблиці</td>
+                    <td><code>table td { padding: 10px; }</code></td>
+                </tr>
+                <tr>
+                    <td><code>tr:nth-child(even)</code></td>
+                    <td>Парні рядки таблиці</td>
+                    <td><code>tr:nth-child(even) { background: #e0f2fe; }</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

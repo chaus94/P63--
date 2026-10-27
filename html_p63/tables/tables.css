@@ -13,3 +13,14 @@
 .product-table td:nth-child(3){
     text-align: right;
 }
+
+.product-table tr:nth-child(even) {
+    background-color: rgb(87, 87, 170);
+}
+.product-table tr:nth-child(odd) {
+    background-color: rgb(63, 141, 63);
+}
+.product-table th{
+    background-color: white;
+}
+

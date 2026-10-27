@@ -38,13 +38,20 @@
  для поеднання цих меж вжеваеится стиль "border-collapse"
 
 </p>
+<p>
+поеднання комирок задаеться атрибутами: colspan - по колонках
+rowspan - по рядках. якщо комирок задае поедання то поеднана з нею
+комирка не зазначаеться таблици (пропускается)
+
+</p>
+
    <table class="product-table">
     <thead>
-        <tr> 
+         
             <th>№</th>
             <th>назва</th>
             <th>цина</th>
-        </tr>
+        
     </thead>
     <tbody>
         <tr>
@@ -93,7 +100,11 @@
     </tbody>
     <tfoot>
          <tr> 
-
+           <th colspan="2">разом</th>
+           <th rowspan="2">40 350</th>
+        </tr>
+        <tr>
+            <th colspan="2">до сплати </th>
         </tr>
      </tfoot>
    </table>

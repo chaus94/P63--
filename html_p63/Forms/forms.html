@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Елементи HTML-форм</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <main>
+        <h1>Елементи HTML-форм</h1>
+        <p class="intro">
+            Форма об'єднує елементи для введення й вибору даних. У таблиці
+            наведено приклади полів <code>&lt;input&gt;</code> та інших
+            елементів форми. Спробуйте взаємодіяти з ними.
+        </p>
+
+        <form action="#" method="get">
+            <div class="table-wrap">
+                <table class="forms-table">
+                    <caption>Приклади елементів форми</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Елемент</th>
+                            <th scope="col">Для чого потрібен</th>
+                            <th scope="col">Приклад</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row"><code>input type="text"</code></th>
+                        <td>Звичайний однорядковий текст</td>
+                        <td><label for="name">Ім'я:</label> <input id="name" name="name" type="text" placeholder="Наприклад, Олена"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="email"</code></th>
+                        <td>Електронна адреса з перевіркою формату</td>
+                        <td><label for="email">E-mail:</label> <input id="email" name="email" type="email" placeholder="name@example.com"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="password"</code></th>
+                        <td>Пароль; введені символи приховано</td>
+                        <td><label for="password">Пароль:</label> <input id="password" name="password" type="password" placeholder="Введіть пароль"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="tel"</code></th>
+                        <td>Номер телефону</td>
+                        <td><label for="phone">Телефон:</label> <input id="phone" name="phone" type="tel" placeholder="+380 00 000 00 00"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="url"</code></th>
+                        <td>Вебадреса з перевіркою формату</td>
+                        <td><label for="website">Сайт:</label> <input id="website" name="website" type="url" placeholder="https://example.com"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="search"</code></th>
+                        <td>Поле для пошукового запиту</td>
+                        <td><label for="search">Пошук:</label> <input id="search" name="search" type="search" placeholder="Що шукаємо?"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="number"</code></th>
+                        <td>Числове значення з кнопками зміни</td>
+                        <td><label for="quantity">Кількість:</label> <input id="quantity" name="quantity" type="number" min="1" max="10" value="1"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="range"</code></th>
+                        <td>Вибір числа за допомогою повзунка</td>
+                        <td><label for="volume">Гучність:</label> <input id="volume" name="volume" type="range" min="0" max="100" value="50"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="date"</code></th>
+                        <td>Вибір дати</td>
+                        <td><label for="date">Дата:</label> <input id="date" name="date" type="date"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="time"</code></th>
+                        <td>Вибір часу</td>
+                        <td><label for="time">Час:</label> <input id="time" name="time" type="time"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="datetime-local"</code></th>
+                        <td>Вибір дати й часу</td>
+                        <td><label for="appointment">Зустріч:</label> <input id="appointment" name="appointment" type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="month"</code></th>
+                        <td>Вибір місяця та року</td>
+                        <td><label for="month">Місяць:</label> <input id="month" name="month" type="month"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="week"</code></th>
+                        <td>Вибір тижня та року</td>
+                        <td><label for="week">Тиждень:</label> <input id="week" name="week" type="week"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="color"</code></th>
+                        <td>Вибір кольору</td>
+                        <td><label for="color">Колір:</label> <input id="color" name="color" type="color" value="#2563eb"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="file"</code></th>
+                        <td>Вибір файлу з пристрою</td>
+                        <td><label for="file">Файл:</label> <input id="file" name="file" type="file"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="checkbox"</code></th>
+                        <td>Прапорець для незалежного вибору</td>
+                        <td><label><input name="agreement" type="checkbox" value="yes"> Погоджуюся з правилами</label></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="radio"</code></th>
+                        <td>Один варіант із групи</td>
+                        <td>
+                            <fieldset class="radio-options">
+                                <legend>Місто:</legend>
+                                <label><input name="city" type="radio" value="odesa"> Одеса</label>
+                                <label><input name="city" type="radio" value="mykolaiv"> Миколаїв</label>
+                                <label><input name="city" type="radio" value="vinnytsia"> Вінниця</label>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>select</code></th>
+                        <td>Вибір зі списку</td>
+                        <td>
+                            <label for="delivery">Доставка:</label>
+                            <select id="delivery" name="delivery">
+                                <option value="courier">Кур'єр</option>
+                                <option value="post">Пошта</option>
+                                <option value="pickup">Самовивіз</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>textarea</code></th>
+                        <td>Багаторядковий текст</td>
+                        <td><label for="message">Повідомлення:</label> <textarea id="message" name="message" rows="3" placeholder="Ваш текст"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="submit"</code></th>
+                        <td>Надсилання значень форми</td>
+                        <td><input type="submit" value="Надіслати приклад"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>input type="reset"</code></th>
+                        <td>Очищення та відновлення початкових значень</td>
+                        <td><input type="reset" value="Скинути поля"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>button</code></th>
+                        <td>Кнопка для виконання дії</td>
+                        <td><button type="button">Звичайна кнопка</button></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

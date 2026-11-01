@@ -1,0 +1,82 @@
+.body{
+  margin: auto;
+  max-width: 750px;
+  text-align: justify;
+}
+
+
+
+
+.zeyada-regular {
+  font-family: "Zeyada", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amatic-sc-regular {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+   font-variation-settings: "wdth" 100;
+  line-height: 1.5;
+}
+
+.amatic-sc-bold {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 80;
+  line-height: 1.5;
+}
+.display-medium {
+  font-size: 26pt;
+  font-weight: 500;
+}
+
+.display-large{
+  font-size: 41pt;
+  font-weight: 200;
+  font-variation-settings: "wdth" 75;
+}
+
+
+button { /*базовый стиль - для всих станив */
+ background-color: burlywood;
+ font-size:  16pt;
+ padding: .5em 1em;
+}
+button:hover { /* стиль стану (псевдокласу) - включаеться коли над елементом курсор  */
+  background-color: rgb(145, 64, 64);
+}
+button:active { /* стиль стану (псевдокласу) - включаеться коли елемент активний  */
+  background-color: rgb(55, 104, 119);
+}
+
+button:focus { /* стиль стану (псевдокласу) - включаеться коли елемент активний  */
+  background-color: rgb(109, 124, 43);
+}
+
+#agree {/*з символу # починаються стили для атрибута id (<input id="agree"....>)*/
+   margin-right: 1em;
+  transform: scale(1.5);
+
+}
+#agree ~ label { /* ~ - наступний елемент (з тегом label) */
+  color: rebeccapurple;
+}
+
+#agree:checked ~ label { /* ~ - наступний елемент за видмиченим елементом*/
+
+  color: rgb(112, 186, 221);
+}
+/* доповнити чекбокс псевдостилим  наведення курсору*/
+
+#agree:hover {
+  accent-color: rgb(36, 107, 46);
+  cursor: pointer;
+}
+
+#agree:hover ~ label { /* ~ - наступний елемент за видмиченим елементом*/
+  color: rgb(36, 107, 46);
+  cursor: pointer;
+}

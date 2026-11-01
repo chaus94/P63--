@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Zeyada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="typo.css">
+
+</head>
+<body class="amatic-sc-bold">
+    <h1 class="display-large">типографика стани елементив</h1>
+<h2 class="display-medium">що таке типографика<sup>*</sup></h2>
+
+<p>
+    Типографіка — це напрям графічного дизайну і система оформлення
+    друкованого тексту. Вона, зокрема, передбачає вибір гарнітури,
+    кеглю, довжини рядка, міжрядкового і міжсимвольного інтервалу.
+    Мета типографіки&nbsp; — зробити текст легким для сприйняття й привабливим,
+    адже утримати увагу глядача у переповненому візуальним контентом світі
+    може бути непростим завданням.
+</p>
+
+<p class="amatic-sc-regular">
+    серед головними аспектами типографіки можно  видилити чіткість, читабельність та естетика.
+    Чіткість визначає, наскільки зручним є текст для сприйняття.
+    Читабельність більше стосується легкості розуміння, а естетика
+    відповідає за загальну привабливість шрифту чи комбінації шрифтів.
+</p>
+
+<sup>*</sup>за матеріалами https://blog.depositphotos.com/ua/pravyla-typografiky.html
+
+<h2 class="display-medium"> стани елементив</h2>
+<p>
+    html - елементи можуть знаходитись у ризних станах:
+</p>
+<ul>
+    <li>hover - над елементов знаходиться курсор миши </li>
+    <li>active - елемент е вибраним (натиснення пробилу активуе його) </li>
+    <li>focus - на елементи фокус введення (друк з клавиатури передаеться на нього ) </li>
+    <li>checked - для чекбоксив чи радиокнопок - стан "вибрано"</li>
+    <li>visited - для посилань по якиъ були переходи</li>
+</ul>
+<p>
+    для стилизации елементив у ризному стани у css  задаються псевдокласи
+    що завершуються двокрапкою та назвою стану наприклад 
+    <code>button:hover {...}</code>
+</p>
+<p>
+    <button>кнопка 1 </button>
+    <button>кнопка 2 </button>
+    <input type="checkbox" id="agree"/><label for="agree">погоджуюсь из правилами </label>
+</p>
+
+</body>
+</html>

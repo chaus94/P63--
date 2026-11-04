@@ -1,0 +1,33 @@
+.countainer{
+ border: 2px solid rgb(177, 42, 42);
+ display: flex;
+ height: 150px;
+
+}
+.h-150{
+    height: 150px;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(189, 56, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(109, 36, 36);
+}
+.j-center{
+    justify-content: center;
+}
+.j-between{
+    justify-content: space-between;
+}
+.j-evenly{
+    justify-content: space-evenly;
+}
+.j-around{
+    justify-content: space-around;
+}
+.a-center{
+    align-items: center;
+}

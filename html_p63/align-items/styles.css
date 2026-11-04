@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: light;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #17233b;
+    background: #f4f7fc;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+}
+
+.page-header {
+    padding: 64px 24px 48px;
+    color: #fff;
+    text-align: center;
+    background:
+        radial-gradient(ellipse at 85% 15%, rgb(105 112 255 / 28%), transparent 34%),
+        linear-gradient(135deg, #17264a, #263d73);
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    color: #7d68f5;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+}
+
+.page-header .eyebrow {
+    color: #b7adff;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 14px;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    letter-spacing: -0.04em;
+}
+
+.lead {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #e0e7f8;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+code {
+    padding: 3px 8px;
+    border: 1px solid #e1e6f0;
+    border-radius: 6px;
+    color: #5746cf;
+    background: #f4f2ff;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.9em;
+}
+
+.lead code {
+    border-color: rgb(255 255 255 / 22%);
+    color: #e2ddff;
+    background: rgb(255 255 255 / 9%);
+}
+
+.axis-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 28px;
+    padding: 10px 16px;
+    border: 1px solid rgb(255 255 255 / 18%);
+    border-radius: 999px;
+    color: #dce5f8;
+    background: rgb(255 255 255 / 8%);
+    font-size: 0.9rem;
+}
+
+.axis-icon {
+    color: #b7adff;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+main {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 54px 0 40px;
+}
+
+.section-heading {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin-bottom: 8px;
+    font-size: clamp(1.6rem, 3vw, 2.15rem);
+    letter-spacing: -0.03em;
+}
+
+.section-heading > p:last-child {
+    margin-bottom: 0;
+    color: #64708a;
+    line-height: 1.6;
+}
+
+.examples-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.example-card {
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid #e2e8f2;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgb(34 53 89 / 5%);
+}
+
+.example-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+    min-height: 74px;
+}
+
+.example-heading h3 {
+    margin-bottom: 5px;
+    font-size: 1.05rem;
+}
+
+.example-heading p {
+    margin-bottom: 0;
+    color: #68748b;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.example-heading > code {
+    flex-shrink: 0;
+}
+
+.flex-demo {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    height: 154px;
+    margin-top: 16px;
+    padding: 12px;
+    border: 1px dashed #b9c5dc;
+    border-radius: 10px;
+    background-color: #f5f7fc;
+    background-image: linear-gradient(to bottom, transparent calc(100% - 1px), #e5eaf3 1px);
+}
+
+.demo-item {
+    display: flex;
+    flex: 1 1 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    border: 1px solid #6353d5;
+    border-radius: 8px;
+    color: #fff;
+    background: linear-gradient(145deg, #8878f2, #6454d7);
+    font-size: 0.95rem;
+    font-weight: 750;
+}
+
+.item-short {
+    height: 48px;
+}
+
+.item-medium {
+    height: 82px;
+}
+
+.item-tall {
+    height: 112px;
+}
+
+.align-flex-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-flex-end {
+    align-items: flex-end;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.align-baseline .demo-item {
+    height: auto;
+    min-height: 48px;
+    padding: 8px;
+}
+
+.baseline-small {
+    font-size: 0.9rem;
+}
+
+.baseline-medium {
+    font-size: 1.5rem;
+}
+
+.baseline-large {
+    font-size: 2.4rem;
+}
+
+.align-stretch .demo-item {
+    height: auto;
+}
+
+.tip {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    margin-top: 24px;
+    padding: 18px 20px;
+    border: 1px solid #e1defe;
+    border-radius: 12px;
+    background: #f0efff;
+}
+
+.tip-icon {
+    display: grid;
+    flex: 0 0 24px;
+    width: 24px;
+    height: 24px;
+    place-items: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #6a5bd7;
+    font-weight: 800;
+}
+
+.tip p {
+    margin: 0;
+    color: #414c66;
+    line-height: 1.7;
+}
+
+footer {
+    padding: 20px;
+    color: #78839a;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+    .page-header {
+        padding: 48px 20px 38px;
+    }
+
+    .axis-note {
+        border-radius: 12px;
+        text-align: left;
+    }
+
+    main {
+        width: min(100% - 28px, 540px);
+        padding-top: 40px;
+    }
+
+    .examples-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .example-card {
+        padding: 16px;
+    }
+
+    .example-heading {
+        min-height: 88px;
+        gap: 8px;
+    }
+
+    .example-heading > code {
+        padding: 3px 6px;
+        font-size: 0.78rem;
+    }
+}

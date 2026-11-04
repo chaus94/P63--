@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Наочна демонстрація значень CSS-властивості align-items у flex-контейнері.">
+    <title>Вирівнювання у Flexbox — align-items</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="page-header">
+        <p class="eyebrow">CSS · FLEXBOX</p>
+        <h1>Вирівнювання елементів</h1>
+        <p class="lead">
+            Властивість <code>align-items</code> вирівнює дочірні елементи
+            у flex-контейнері <strong>поперек основної осі</strong>.
+        </p>
+        <div class="axis-note">
+            <span class="axis-icon" aria-hidden="true">↕</span>
+            <span>У прикладах нижче основна вісь — горизонтальна, поперечна — вертикальна.</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="examples" aria-labelledby="examples-title">
+            <div class="section-heading">
+                <p class="eyebrow">П’ЯТЬ ОСНОВНИХ ЗНАЧЕНЬ</p>
+                <h2 id="examples-title">Порівняйте результат</h2>
+                <p>Висота контейнера однакова, а висота елементів змінюється, щоб різницю було добре видно.</p>
+            </div>
+
+            <div class="examples-grid">
+                <article class="example-card">
+                    <div class="example-heading">
+                        <div>
+                            <h3>На початку</h3>
+                            <p>Елементи притиснуті до початку поперечної осі.</p>
+                        </div>
+                        <code>flex-start</code>
+                    </div>
+                    <div class="flex-demo align-flex-start" aria-label="Елементи вирівняні на початку поперечної осі">
+                        <div class="demo-item item-short">01</div>
+                        <div class="demo-item item-tall">02</div>
+                        <div class="demo-item item-medium">03</div>
+                    </div>
+                </article>
+
+                <article class="example-card">
+                    <div class="example-heading">
+                        <div>
+                            <h3>По центру</h3>
+                            <p>Центри елементів розташовані на одній лінії.</p>
+                        </div>
+                        <code>center</code>
+                    </div>
+                    <div class="flex-demo align-center" aria-label="Елементи вирівняні по центру поперечної осі">
+                        <div class="demo-item item-short">01</div>
+                        <div class="demo-item item-tall">02</div>
+                        <div class="demo-item item-medium">03</div>
+                    </div>
+                </article>
+
+                <article class="example-card">
+                    <div class="example-heading">
+                        <div>
+                            <h3>У кінці</h3>
+                            <p>Елементи притиснуті до кінця поперечної осі.</p>
+                        </div>
+                        <code>flex-end</code>
+                    </div>
+                    <div class="flex-demo align-flex-end" aria-label="Елементи вирівняні в кінці поперечної осі">
+                        <div class="demo-item item-short">01</div>
+                        <div class="demo-item item-tall">02</div>
+                        <div class="demo-item item-medium">03</div>
+                    </div>
+                </article>
+
+                <article class="example-card">
+                    <div class="example-heading">
+                        <div>
+                            <h3>За базовою лінією</h3>
+                            <p>Текстові базові лінії елементів збігаються.</p>
+                        </div>
+                        <code>baseline</code>
+                    </div>
+                    <div class="flex-demo align-baseline" aria-label="Текст у елементах вирівняний за базовою лінією">
+                        <div class="demo-item item-short baseline-small">Aa</div>
+                        <div class="demo-item item-tall baseline-large">Aa</div>
+                        <div class="demo-item item-medium baseline-medium">Aa</div>
+                    </div>
+                </article>
+
+                <article class="example-card">
+                    <div class="example-heading">
+                        <div>
+                            <h3>Розтягування</h3>
+                            <p>Елементи заповнюють висоту контейнера.</p>
+                        </div>
+                        <code>stretch</code>
+                    </div>
+                    <div class="flex-demo align-stretch" aria-label="Елементи розтягнуті на всю висоту контейнера">
+                        <div class="demo-item">01</div>
+                        <div class="demo-item">02</div>
+                        <div class="demo-item">03</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <aside class="tip">
+            <span class="tip-icon" aria-hidden="true">i</span>
+            <p>
+                <strong>Пам’ятайте:</strong> <code>align-items</code> працює поперек основної осі.
+                Для вирівнювання вздовж основної осі використовуйте <code>justify-content</code>.
+                Значення за замовчуванням — <code>stretch</code>.
+            </p>
+        </aside>
+    </main>
+
+    <footer>Демонстраційна сторінка · CSS Flexbox</footer>
+</body>
+</html>

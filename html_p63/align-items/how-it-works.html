@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Пояснення роботи CSS-властивості align-items у Flexbox.">
+    <title>Як працює align-items — Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="page-header">
+        <p class="eyebrow">CSS · FLEXBOX · ПОЯСНЕННЯ</p>
+        <h1>Як працює <code>align-items</code></h1>
+        <p class="lead">
+            Розберімо, як Flexbox розташовує елементи, що означають його осі
+            та як вибрати потрібне значення.
+        </p>
+        <nav class="page-nav" aria-label="Навігація сторінками">
+            <a href="index.html">Перейти до наочних прикладів</a>
+        </nav>
+    </header>
+
+    <main class="guide">
+        <section class="guide-section" aria-labelledby="setup-title">
+            <p class="eyebrow">КРОК 1</p>
+            <h2 id="setup-title">Створіть Flex-контейнер</h2>
+            <p>
+                Спочатку задайте батьківському елементу <code>display: flex</code>.
+                Його безпосередні дочірні елементи стануть flex-елементами.
+            </p>
+            <pre><code>.container {
+  display: flex;
+}</code></pre>
+        </section>
+
+        <section class="guide-section" aria-labelledby="axes-title">
+            <p class="eyebrow">КРОК 2</p>
+            <h2 id="axes-title">Зрозумійте дві осі</h2>
+            <p>
+                Flexbox розкладає елементи вздовж <strong>основної осі</strong>.
+                <code>align-items</code> вирівнює їх поперек неї — на
+                <strong>поперечній осі</strong>. За стандартного
+                <code>flex-direction: row</code> основна вісь горизонтальна,
+                а поперечна — вертикальна.
+            </p>
+            <div class="axis-diagram" aria-label="Для flex-direction row: основна вісь горизонтальна, поперечна вертикальна">
+                <span>Поперечна вісь</span>
+                <strong aria-hidden="true">↕</strong>
+                <span class="axis-main">Основна вісь&nbsp; →</span>
+            </div>
+            <p>
+                Якщо задати <code>flex-direction: column</code>, напрями зміняться:
+                основна вісь стане вертикальною, а поперечна — горизонтальною.
+                Тому <code>align-items</code> вже вирівнюватиме елементи зліва направо
+                або справа наліво.
+            </p>
+        </section>
+
+        <section class="guide-section" aria-labelledby="values-title">
+            <p class="eyebrow">КРОК 3</p>
+            <h2 id="values-title">Виберіть спосіб вирівнювання</h2>
+            <ul class="value-list">
+                <li><code>stretch</code> — розтягує елементи по поперечній осі, якщо для них не задано власний розмір у цьому напрямі. Це значення за замовчуванням.</li>
+                <li><code>flex-start</code> — притискає елементи до початку поперечної осі.</li>
+                <li><code>center</code> — розміщує елементи по центру поперечної осі.</li>
+                <li><code>flex-end</code> — притискає елементи до кінця поперечної осі.</li>
+                <li><code>baseline</code> — вирівнює текст за його базовою лінією.</li>
+            </ul>
+        </section>
+
+        <section class="guide-section" aria-labelledby="demo-title">
+            <p class="eyebrow">КРОК 4</p>
+            <h2 id="demo-title">Зв’яжіть CSS із результатом</h2>
+            <p>
+                У прикладах на цій сторінці спільний клас задає Flexbox-контейнер
+                і його висоту, а окремий клас визначає значення
+                <code>align-items</code>:
+            </p>
+            <pre><code>.flex-demo {
+  display: flex;
+  height: 154px;
+}
+
+.align-center {
+  align-items: center;
+}</code></pre>
+            <p>
+                Висота контейнера дає елементам простір для вирівнювання.
+                У варіантах із <code>flex-start</code>, <code>center</code>,
+                <code>flex-end</code> та <code>baseline</code> елементи мають різну
+                висоту, щоб результат було видно. У прикладі
+                <code>stretch</code> висоту елементів не задано, тож вони заповнюють
+                доступну висоту контейнера.
+            </p>
+        </section>
+
+        <aside class="tip">
+            <span class="tip-icon" aria-hidden="true">i</span>
+            <p>
+                <strong>Коротко:</strong> <code>align-items</code> вирівнює flex-елементи
+                поперек основної осі. Для вирівнювання вздовж основної осі зазвичай
+                використовують <code>justify-content</code>.
+            </p>
+        </aside>
+    </main>
+
+    <footer>Пояснення до демонстрації CSS Flexbox</footer>
+</body>
+</html>

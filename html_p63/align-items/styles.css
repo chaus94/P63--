@@ -93,6 +93,26 @@ code {
     font-weight: 700;
 }
 
+.page-nav {
+    margin-top: 24px;
+}
+
+.page-nav a {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid rgb(255 255 255 / 28%);
+    border-radius: 8px;
+    color: #fff;
+    background: rgb(255 255 255 / 9%);
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.page-nav a:hover,
+.page-nav a:focus-visible {
+    background: rgb(255 255 255 / 18%);
+}
+
 main {
     width: min(1120px, calc(100% - 40px));
     margin: 0 auto;
@@ -261,6 +281,83 @@ main {
     line-height: 1.7;
 }
 
+.guide {
+    max-width: 820px;
+}
+
+.guide-section {
+    margin-bottom: 28px;
+    padding: 26px;
+    border: 1px solid #e2e8f2;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgb(34 53 89 / 5%);
+}
+
+.guide-section h2 {
+    margin-bottom: 12px;
+    font-size: clamp(1.35rem, 3vw, 1.8rem);
+    letter-spacing: -0.03em;
+}
+
+.guide-section > p:not(.eyebrow) {
+    color: #536079;
+    line-height: 1.7;
+}
+
+.guide-section > p:last-child {
+    margin-bottom: 0;
+}
+
+.guide-section pre {
+    overflow-x: auto;
+    margin: 18px 0;
+    padding: 18px;
+    border-radius: 10px;
+    color: #e8ebff;
+    background: #202b49;
+    line-height: 1.6;
+}
+
+.guide-section pre code {
+    padding: 0;
+    border: 0;
+    color: inherit;
+    background: transparent;
+}
+
+.axis-diagram {
+    display: grid;
+    justify-items: center;
+    gap: 8px;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px dashed #b9c5dc;
+    border-radius: 10px;
+    color: #536079;
+    background: #f5f7fc;
+    font-size: 0.9rem;
+}
+
+.axis-diagram strong {
+    color: #6454d7;
+    font-size: 1.8rem;
+}
+
+.axis-main {
+    color: #5746cf;
+    font-weight: 700;
+}
+
+.value-list {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding-left: 22px;
+    color: #536079;
+    line-height: 1.7;
+}
+
 footer {
     padding: 20px;
     color: #78839a;
@@ -285,6 +382,10 @@ footer {
 
     .examples-grid {
         grid-template-columns: 1fr;
+    }
+
+    .guide-section {
+        padding: 20px;
     }
 }
 

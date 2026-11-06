@@ -7,6 +7,10 @@
 .h-150{
     height: 150px;
 }
+
+.h_100{
+    height: auto !important;
+}
 .item{
     width: 100px;
     height: 100px;
@@ -30,4 +34,27 @@
 }
 .a-center{
     align-items: center;
+}
+.a-stretch{
+    align-items: stretch;
+}
+.flex-1{
+    background-color: rgb(155, 87, 80);
+    flex: 1;
+}
+.flex-2{
+    background-color: rgba(39, 146, 160, 0.514);
+    flex: 2;
+}
+.flex-3{
+    background-color: rgba(167, 136, 37, 0.795);
+    flex: 3;
+}
+.flex-4{
+    background-color: rgba(77, 216, 49, 0.514);
+    flex: 4;
+}
+.flex-5{
+    background-color: rgba(170, 39, 153, 0.795);
+    flex: 5;
 }

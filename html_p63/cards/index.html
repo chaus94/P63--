@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Добірка аудіотехніки: навушники та портативна колонка.">
+    <title>Аудіотехніка — добірка товарів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#" aria-label="Звукова хвиля — на головну">Звукова<span>хвиля</span></a>
+        <a class="cart" href="#cart-summary">Кошик</a>
+    </header>
+
+    <main>
+        <section class="catalog" aria-labelledby="catalog-title">
+            <p class="eyebrow">Звук, який надихає</p>
+            <h1 id="catalog-title">Аудіотехніка для кожного дня</h1>
+            <p class="intro">Обирайте улюблений звук — для прогулянок, роботи й відпочинку.</p>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                            alt="Чорні накладні навушники на світлому фоні"
+                        >
+                        <span class="product-label">Хіт продажу</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="category">Бездротові навушники</p>
+                        <h2>SoundBeat Studio</h2>
+                        <p class="description">Чистий насичений звук, комфортна посадка та до 30 годин музики без підзарядки.</p>
+                        <div class="product-bottom">
+                            <p class="price">3 499 <span>грн</span></p>
+                            <div class="actions">
+                                <input class="toggle-input" type="checkbox" id="cart-soundbeat">
+                                <label class="buy-button" for="cart-soundbeat">До кошика</label>
+                                <input class="toggle-input" type="checkbox" id="favorite-soundbeat">
+                                <label class="favorite-button" for="favorite-soundbeat" aria-label="Додати SoundBeat Studio в обране"></label>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                            alt="Компактні бездротові навушники-вкладиші"
+                            loading="lazy"
+                        >
+                        <span class="product-label">Новинка</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="category">Навушники-вкладиші</p>
+                        <h2>AirTone Mini</h2>
+                        <p class="description">Легкі навушники з чітким звучанням, сенсорним керуванням і зручним зарядним футляром.</p>
+                        <div class="product-bottom">
+                            <p class="price">2 199 <span>грн</span></p>
+                            <div class="actions">
+                                <input class="toggle-input" type="checkbox" id="cart-airtone">
+                                <label class="buy-button" for="cart-airtone">До кошика</label>
+                                <input class="toggle-input" type="checkbox" id="favorite-airtone">
+                                <label class="favorite-button" for="favorite-airtone" aria-label="Додати AirTone Mini в обране"></label>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                            alt="Портативна колонка для прослуховування музики"
+                            loading="lazy"
+                        >
+                        <span class="product-label">Для пригод</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="category">Портативна колонка</p>
+                        <h2>BeatBox Go</h2>
+                        <p class="description">Потужний звук у компактному корпусі, захист від бризок і до 12 годин автономної роботи.</p>
+                        <div class="product-bottom">
+                            <p class="price">1 899 <span>грн</span></p>
+                            <div class="actions">
+                                <input class="toggle-input" type="checkbox" id="cart-beatbox">
+                                <label class="buy-button" for="cart-beatbox">До кошика</label>
+                                <input class="toggle-input" type="checkbox" id="favorite-beatbox">
+                                <label class="favorite-button" for="favorite-beatbox" aria-label="Додати BeatBox Go в обране"></label>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <p class="cart-summary" id="cart-summary" aria-live="polite">
+                Товарів у кошику: <span id="cart-count"></span>
+            </p>
+        </section>
+
+        <section class="how-it-works" aria-labelledby="how-it-works-title">
+            <h2 id="how-it-works-title">Як працює цей сайт</h2>
+            <p>Сторінка створена за допомогою HTML і CSS. HTML задає структуру каталогу: заголовок, картки товарів, ціни та кнопки. CSS відповідає за кольори, розташування елементів і вигляд сторінки на різних екранах.</p>
+            <ul>
+                <li>Картка товару містить фотографію, назву, опис і ціну.</li>
+                <li>Натисніть «До кошика», щоб позначити товар. Лічильник унизу каталогу показує кількість позначених товарів.</li>
+                <li>Натисніть на сердечко, щоб додати товар до обраного або прибрати його звідти.</li>
+                <li>Кнопки-перемикачі та лічильник зроблені засобами HTML і CSS — JavaScript не використовується.</li>
+                <li>На вузькому екрані картки автоматично перебудовуються в один стовпець.</li>
+            </ul>
+            <p class="site-note">Це навчальний каталог: вибрані товари не зберігаються після перезавантаження сторінки, а оформлення замовлення не виконується.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">Знайдіть свій звук — і беріть його із собою.</footer>
+</body>
+</html>

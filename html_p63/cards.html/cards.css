@@ -45,7 +45,7 @@
     padding: 2px 4px;
 }
 .card-button:hover {
-    background-color: #58c510;
+    background-color: #f31212ea;
 }
 .card-button:focus {
     border: 2px solid #99b884;

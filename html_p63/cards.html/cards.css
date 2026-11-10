@@ -26,6 +26,8 @@
 }
 .card-subhead {
     font-size: x-large;
+    color: #f5b301;
+    letter-spacing: 2px;
 }
 .card-text {
     flex: 1;

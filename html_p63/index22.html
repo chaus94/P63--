@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основи вебу: HTML і CSS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 24px;
+            color: #333333;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin: 0 0 18px;
+            font-size: clamp(24px, 4vw, 36px);
+        }
+
+        .a-container {
+            display: flex;
+            width: min(460px, 100%);
+            flex-direction: column;
+            overflow: hidden;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+        }
+
+        .a-container a {
+            padding: 10px 12px;
+            border-bottom: 1px solid lightgray;
+            color: rgb(114, 114, 114);
+            text-decoration: none;
+            transition: background-color 150ms ease, color 150ms ease;
+        }
+
+        .a-container a:last-child {
+            border-bottom: 0;
+        }
+
+        .a-container a:hover,
+        .a-container a:focus-visible {
+            background: #f2f6fc;
+            color: #2f5e9e;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>все что мы проходили: web html + css</h1>
+    <nav class="a-container" aria-label="Теми навчання">
+        <a href="intro.html">Знайомство з HTML</a>
+        <a href="css.html">Каскадні таблиці стилів CSS</a>
+        <a href="tables/tables.html">Таблиці в HTML</a>
+        <a href="Forms/forms.html">Форми HTML</a>
+        <a href="typo/typo.html">Типографіка та текстові елементи</a>
+        <a href="battery/battery.html">Псевдокласи</a>
+        <a href="flex/flex.html">Flexbox</a>
+        <a href="cards.2/cards.2.html">Картки та макети</a>
+    </nav>
+</body>
+</html>

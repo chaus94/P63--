@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основи вебу: HTML і CSS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            min-height: 100%;
+            background: #f4f6fa;
+        }
+
+        body {
+            width: min(600px, calc(100% - 32px));
+            margin: clamp(28px, 8vh, 72px) auto;
+            color: #263248;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        h1 {
+            margin: 0 0 22px;
+            font-size: clamp(28px, 5vw, 40px);
+            font-weight: 750;
+            letter-spacing: -0.04em;
+            line-height: 1.12;
+        }
+
+        .a-container {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border: 1px solid #dfe4ec;
+            border-radius: 12px;
+            background: #ffffff;
+            box-shadow: 0 12px 30px rgba(32, 48, 75, 0.08);
+        }
+
+        .a-container a {
+            padding: 13px 16px;
+            border-bottom: 1px solid #edf0f5;
+            color: #465369;
+            font-size: 15px;
+            line-height: 1.4;
+            text-decoration: none;
+            transition: background-color 150ms ease, color 150ms ease, padding-left 150ms ease;
+        }
+
+        .a-container a:last-child {
+            border-bottom: 0;
+        }
+
+        .a-container a:hover,
+        .a-container a:focus-visible {
+            padding-left: 20px;
+            background: #f5f8fc;
+            color: #315e9e;
+        }
+
+        .a-container a:focus-visible {
+            outline: 2px solid #8da9d1;
+            outline-offset: -2px;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                margin-bottom: 18px;
+            }
+
+            .a-container a {
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Все, что мы проходили: Web, HTML и CSS</h1>
+    <nav class="a-container" aria-label="Теми навчання">
+        <a href="intro.html">Знайомство з HTML</a>
+        <a href="css.html">Каскадні таблиці стилів CSS</a>
+        <a href="tables/tables.html">Таблиці в HTML</a>
+        <a href="Forms/forms.html">Форми HTML</a>
+        <a href="typo/typo.html">Типографіка та текстові елементи</a>
+        <a href="battery/battery.html">Псевдокласи</a>
+        <a href="flex/flex.html">Flexbox</a>
+        <a href="cards.2/cards.2.html">Картки та макети</a>
+    </nav>
+https://github.com/chaus94/haruta.git
+https://github.com/chaus94
+
+
+
+</body>
+</html>
